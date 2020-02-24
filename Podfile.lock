@@ -1,0 +1,16 @@
+PODS:
+  - SwiftDate (6.0.3)
+
+DEPENDENCIES:
+  - SwiftDate
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftDate
+
+SPEC CHECKSUMS:
+  SwiftDate: 8d4f14bf1ef68e95094511504856547bf9e3e1a6
+
+PODFILE CHECKSUM: 1dbc9da8d512404a8c8f8d43bb9e6beec9983f05
+
+COCOAPODS: 1.5.3

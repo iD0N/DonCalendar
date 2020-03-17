@@ -43,7 +43,8 @@ class CalendarCell: UICollectionViewCell {
 		super.layoutSubviews()
 		notificationView.layer.cornerRadius = 9.0
 	}
-	func configureCell(type: DateState, day: Int, appearance: CalendarAppearance, isHoliday: Bool = false, isWeekend: Bool = false, price: Int = 0, notificationCount: Int = 0, notificationColor: UIColor = .white) {
+	func configureCell(type: DateState, day: Int, appearance: CalendarAppearance, isHoliday: Bool = false, isWeekend: Bool = false, price: Int = 0, notificationCount: Int = 0, notificationColor: UIColor = .white)
+	{
 		
 		notificationView.isHidden = (notificationCount == 0)
 		priceLabel.isHidden = !appearance.shouldShowPrice && type != .checkOutDay
@@ -54,10 +55,12 @@ class CalendarCell: UICollectionViewCell {
 		dayLabel.font = appearance.font
 		priceLabel.font = appearance.priceFont
 		
-		switch type {
+		switch type
+		{
 			
 		case .unAvailable:
 			strikeOverCell(day: day)
+			
 		case .available:
 
 			dayLabel.textColor = (isHoliday || isWeekend) ? appearance.weekendColor : appearance.availableColor
@@ -137,14 +140,6 @@ class CalendarCell: UICollectionViewCell {
 			} else {
 				// Fallback on earlier versions
 			}
-			
-		default:
-
-			dayLabel.textColor = appearance.selectedColor
-			layer.cornerRadius = 15
-			backgroundColor = .clear
-			layer.borderColor = appearance.selectedColor.cgColor
-			layer.borderWidth = 1.0
 		}
 	}
 

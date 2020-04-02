@@ -37,6 +37,7 @@
 		461FD69CE795CE51EF5677AC /* Pods-DonCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DonCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DonCalendar/Pods-DonCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		B3338A89A7685CE80302D8CD /* Pods-DonCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DonCalendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-DonCalendar/Pods-DonCalendar.release.xcconfig"; sourceTree = "<group>"; };
 		F66043B823314FD4006BEB71 /* DaySelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelection.swift; sourceTree = "<group>"; };
+		F67E6EFE24367305000A0A2A /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A36FF2240D15C800ECE599 /* Pods_DonCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_DonCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A37004240D1CDA00ECE599 /* DonCalendar-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DonCalendar-Swift.h"; sourceTree = "<group>"; };
 		F6BD7F2C233127AE0078F3C9 /* DonCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DonCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +79,7 @@
 		1D52177D41AD022AE0C69657 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F67E6EFE24367305000A0A2A /* SwiftDate.framework */,
 				F6A36FF2240D15C800ECE599 /* Pods_DonCalendar.framework */,
 			);
 			name = Frameworks;
@@ -449,6 +451,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.don.DonCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -478,6 +481,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.don.DonCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
